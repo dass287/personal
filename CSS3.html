@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pagina web CSS3</title>
+        <meta charset="utf-8">
+        <link rel="icon" href="Logo_CSS.ico">
+        <link rel="stylesheet" type="text/css" href="css.css">
+        <link rel="stylesheet" type="text/css" href="normalize.css">
+    </head>
+    <body>
+        <div class="fixed_y_overflow">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+        <div>
+            <h1 class="1erH1">Hola Mundo</h1>
+        </div>
+            <div>
+            <input id="input1" type="text" value="Como estan?" class="Input-Hola_Mundo">
+        </div>
+            <div class=" contact-div">
+            <p class="parrafo_1">
+                Lorem ipsum dolor sullamco laboris nisi ut aliquip ex ea laborum.
+            </p>    
+            <p parrafo2="parrafo_2">
+                consequat. Duis aute irura deserunt mollit anim id est laborum.
+            </p>
+            <p parrafo3="parrafo_3">
+                Lorem Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est.
+            </p>
+            <h2>
+                <p>
+                    <b class="contact1-h2-b">Segundo titulo</b><strong> pero con hover</strong>
+                </p>
+            </h2>
+        <!--Esto iria en contra de la metadologia BEM ya que no estoy usando ningun tipo de divisiones "correctas" porque podria hacerlo simplemente poniendolos en un h2\3
+        y asi modificarlos por clase,o mas directo y especifico y asegurando que no halla ninguna confusion despues;podria ser con un "id"  
+        -->
+        </div>
+        <div class="contact-form">
+            <!--*form=formulario.\*Poniendo form en el div,se que este div es de un formulario.-->
+            <input type="text" class="contact-form__input">
+            <input type="text" class="contact-form__input">
+            <input type="text" class="contact-form__input--especial">
+            <input type="text" class="contact-form__input">
+            <input type="password" class="contact-form__input">
+            <h2 class="contact-form__h2"><b>H2 con ajuste de tamaño de letra en </b>CSS</h2>
+            <!--Esto es parte de la metodoología BEM;aqui no hay input porque simplemente no es input,y no va el "p" porque es por el bloque o etiqueta en la que este y no en todas las que esta dentro.-->
+            <!--el "estilo"em" hereda el numero de pixeles que se le dan anteriormente
+            .contact-form {
+                font-size: 20px
+            }
+            .contact-form__h2 {
+                font-size: 1em
+            }-->
+        </div>
+        <div class="contact-textProperty-Div">
+            <p class="contact-textProperty__div__P">
+                Titulo con cambios de tamaño y color
+            </p><br>
+            <p class="contact-textProperty__div__P-2">Titulos con cambios de tamaño y color numero 2</p>
+        </div>
+        <div class="contact-div-Pruebas">
+            <br>
+            <p class="contact-div__P1">
+                Hola Mundo
+            </p>
+            <br>
+            <p class="contact-div__P2">
+                Hola Mundo2
+            </p>
+        </div>
+        <div>
+            <h4 class="contact-div__h4-1">Esto es el "box-sizing"</h4>
+            <h4 class="contact-div__h4-2">Este es el "box-sizing"2</h4>
+        </div>
+        <br>
+        <div class="div-margin">
+            <h4 class="contact-div__h4-3">Esto es el "box-sizing"3</h4><h4 class="contact-div__h4-4">Este es el "box-sizing"4</h4>
+            <br>
+            <h4 class="contact-div__h4-5">Esto es el "box-sizing"5</h4>
+            <h4 class="contact-div__h4-6">Este es el "box-sizing"6</h4>
+        </div>
+        <h2>--------------------------------------------------------------------------------------</h2>
+        <div class="div-caja1"></div>
+        <div class="div-caja2"></div>
+        <div class="Div-Caja_Sticky">Esta es una caja Con el position sticky</div>
+        <div>
+            <h3 class="Letras_De_Relleno">Letras de relleno</h3>
+        </div>
+        <br><br>
+        <div>
+            <div class="div__box-positions-1">Caja 1</div>
+            <div class="div__box-positions-2">Caja 2</div>
+            <div class="div__box-positions-3">Caja 3</div>
+            <div class="div__box-positions-4">Caja 4</div>
+            <div class="div__box-positions-5">Caja 5</div>
+            <div class="div__box-positions-6">Caja 6</div>
+            <div class="div__box-positions-7">Caja 7</div>
+            <div class="div__box-positions-8">Caja 8</div>
+        </div>
+<!--
+* es selector universal.
+el id es solo para identificar una cosa, pero con class se pueden elegir varias en especifico.
+------------------------------------------------Las Jeraquias:----------------------------------------------------
+__________________________*!Important(No se recomienda usar porque queda fijado)*______________________________________
+_____________________________________________*Estilos en linea*________________________________________________________
+__________________________________________*Identificadores("id")*______________________________________________________
+_______________________________________*Clase,atributo,pseudo-clase*___________________________________________________
+_______________________________________*Elementos, pseudo-elementos*___________________________________________________
+-->
+<!--La etiqueta "a" es usada para hacer un enlace a otro documeneto de la pagina que estamos desarrollando por ejemplo.
+Y se puede usar "#" para ver como se veria ese text como enlace-->
+        <div class="Div-HolaMundo">
+            Hola Mundo
+        </div>
+        <br>
+        <!--
+        <div class="div-EjemContenedorCaja">
+            <div>
+                <div class="contenedor">
+                    <div class="caja1">Caja 1</div>
+                    <div class="caja2">Caja 2</div>
+                    <div class="caja3">Caja 3</div>
+                    <div class="caja4">Caja 4</div>
+                    <div class="caja5">Caja 5</div>        
+                </div>
+            </div>
+        </div>
+        -->
+        <p class="hola-mundo2">
+            Hola mundo
+        </p>
+        <br>
+        <br>
+        <div class="div-h2:Hover">
+            <h2 class="h2_ConHover">Letra para rellenar el H2 con hover</h2>
+        </div>
+        <!--El display inline-block es lo mismo que el atributo inline pero se le puede dar un ancho y largo--->
+        <!--Overflow es un "shortcut" para overflowY y X-->
+        <!--Si el overflow esta en hidde no se va a ver o mostrar lo que este fuera de la caja-->
+        <div class="Overflow">
+            <img class="img_overflo" src="2.png">
+        </div>
+        <!--No me funcionaba porque habia quitado el normalize. Importante leer TODO el codigo-->
+        <div class="Overflow1">
+            <img class="img_overflow" src="2.png">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>    
+    </body>
+</html>

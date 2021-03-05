@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Página Web en HTML5</title>
+            <meta charset="utf-8">
+            <meta name="keywords" content="Pagina Web de principiante sin CSS(26/11/2020)ni JS">
+            <meta name="description" content="Hecha en Sublime Text">
+            <meta name="author" content="Daniel Sorto">
+            <meta name="copyright" content="Dominio Publico">
+            <meta name="robots" content="noindex">
+            <link rel="icon" href="HTML5_Logo.ico">
+            <style type="text/css">
+                .CSS_Interno-div__p {
+                    color: red;
+                }   
+            </style>
+<!--No se puede poner un hover en linea ni de manera interna en un archivo HTML;Enserio no se puede?No,si se puede pero no es lo correcto hacerlo,ademas que 
+probablemente de un error.Vease mas en: https://html.dokry.com/476-->
+        </head> 
+    <body>
+        <!--El header es solo para el principio;Es el encabezado-->        
+        <b id="listas">Hola Mundo</b>
+        <article>
+            <section>
+                <div>
+                    <p>
+                        <h2 id="principio_">Accesos Directos:</h2>
+                    </p>
+                </div>
+                <div>
+                    <header>
+                        <nav>
+                            <ul>
+                                <li><a href="#listas">Listas</a></li>
+                                <li><a href="#tipos_De_letras">Letras</a></li>
+                                <li><a href="#enlaces">Enlaces</a></li>
+                                <li><a href="#imagenes">Multimedia</a></li>
+                                <li><a href="header__Formularios">Formularios</a></li>
+                                <li><a href="#Articulo_y_Section">Articulo</a></li>                               
+                                <li><a href="#tablas">Tablas</a></li>                           
+                                <li><a href="#navS">NAVs</a></li>
+                                <li><a href="#codigo">Codigo</a></li>
+                            </ul>
+                        </nav>   
+                    </header>
+                </div>
+            </section>
+        </article>
+        <b id="listas">Ejemplos de listas</b>
+        <div>
+            <ol>
+                <!--Lista con numeros:-->
+                <li>Leche</li>
+                <li>Harina</li>
+                <li> Huevos</li>
+                <li>Arroz</li>
+            </ol>
+        </div>
+        <!-- listas con puntos: -->
+        <div>    
+            <ul>
+                <li>Leche</li>
+                <li>Harina</li>
+                <li> Huevos</li>
+                <li>Arroz</li>
+            </ul>
+        </div>
+        <div>
+            <b id="tipos_De_letras">Ejemplo de tipos de letras:</b>
+            <b>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.</b><br>
+            <i>Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.</i><br>
+            <strong>Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur.</strong><br>
+            <strike>Excepteur sint occaecat cupidatat non
+            proident,</strike><br>
+            <small>sunt in culpa qusi officia deserunt mollit anim id est laborum.</small>
+        </div>
+        <b id="enlaces">Enlaces:</b>
+        <div>
+            <p>    
+                <a href="pruebas/Apuntes_De_Devocionales.html">Click para ir a la pagina de anotaciones</a><br>
+                <a href="https://www.youtube.com/channel/UCggbGtXeGGE6DoKqfhRzMNA" target="_BLANK">Click aqui para ir a mi canal de Youtube</a>>
+            </p>
+        </div>   
+        <br>
+        <br>
+            <b id="imagenes"><b>Multimedia:</b></b>
+            <b>Imagen:</b>
+            <br>
+            <img src="pruebas/pncho2.png"alt="Un Poncho"title="Poncho">
+            <br> 
+            <b>Un Video:</b>
+            <br>
+            <video src="http://v2v.cc/~j/theora_testsuite/pixel_aspect_ratio.ogg" width="350px" controls=""></video>
+            <br>
+            <b>Un Audio:</b>
+            <br>
+            <audio src="http://v2v.cc/~j/theora_testsuite/pixel_aspect_ratio.ogg" width="350px" controls=""></audio>
+<!-- "Div" es un divisor-->
+        
+        <div>
+            <!--"Require es para que rellenar un campo sea obligatorio "-->
+            <b id="header__Formularios">Formularios Y Seleccion de Color</b>
+            <b>Texto:</b>
+            <input type="text">
+            <br>
+            <b>Contraseña:</b>
+            <input type="password" required="">
+            <br>
+            <b>Numeros:</b>
+            <input type="number">
+            <br>
+            <!--Se puede usar el atributo "multiple" para poder poner varios e-mails a la vez-->
+            <b>Email:</b>
+            <input type="email" multiple="" required="">
+            <br>
+            <b>Color:</b>
+            <input type="color">
+            <br>
+            <b>Rango:</b>
+            <input type="range">
+            <br>
+            <b>Data:</b>
+            <input type="data">
+            <br>
+            <b>Tiempo:</b>
+            <input type="time">
+            <br>
+            <b>Boton:</b>
+            <input type="button" value="Boton">
+            <br>
+            <b>Busqueda:</b>
+            <input type="search">
+            <br>
+            <b>Mes:</b>
+            <input type="month">
+            <br>
+            <b>Semana:</b>
+            <input type="week">
+            <br>
+            <!--El de submit es para enviar los datos puestos a algun lado(se ve mas en el lado de backend(el lado que me esta interesando por cierto))-->
+            <textarea readonly="">Hola Mundo</textarea>
+            <br>
+            <textarea>Hola Mundo</textarea>
+            <b>Subir o Enviar:</b>
+            <input type="submit">
+            <br>
+        </div>       
+        <!--El NAV es practicamente una lista de enlaces.Si todos los archivos a los que te envian los enlaces estan en la misma carpeta no ocupa la dirreccion especifica. -->
+        <b id="navS">NAV's</b>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="pruebas/archivosNav/index2.html">Pagina Principal</a></li>
+                    <li><a href="pruebas/archivosNav/tucuenta.html">Tu Cuenta</a></li>
+                    <li><a href="pruebas/archivosNav/nosotros.html">Sobre Nosotros</a></li>
+                </ul>
+            </nav>
+        </header>
+        <b id="Articulo_y_Section">Section y Article:</b>
+        <article>
+            <section>
+                <div>
+                    <p>
+                        <b>Canal de joven Hondureño supera las mil visitas por dia y cueta con mas de 100,000 suscriptores y cada dia continua avanzando.</b>
+                    </p>
+                    <p>
+                        Actualmente este joven se dedica a varias cosas pero afirma:"Si el canal sigue <i>creciendo<i> a este <b>ritmo</b>, me puedo llegar a <b>dedicar</b> a Youtube."
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.<br> Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.<br> Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur.
+                        <br>Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </section>
+        </article>
+        <aside><!--mas info de un lado.-->
+            <b>Contenido Extra:(es mas funcional con CSS)</b>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </aside>
+        <footer>
+            <!--Pie de Pagina:-->
+            <p>
+                Tods los derechos reservados para mi :b.
+            </p>
+            <p>
+                Sigueme en mis redes:
+                <b>*Inserta redes*</b>
+            </p>
+        </footer>
+        <b id="tablas">Tablas</b> 
+        <table>
+            <!--Es mejor hacer el marco con CSS
+            -->
+            <tr>
+                <td><b>Nombre:</b></td>
+                <td><b>Apellido:</b></td>
+                <td><b>Canal:</b></td>
+                <td><b>Seguidores:</b></td> 
+            </tr>
+            <tr>
+                <td>Daniel</td>
+                <td>Sorto</td>
+                <td>dass287</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <td>Lucas</td>
+                <td>Dalto</td>
+                <td>SoyDalto</td>
+                <td>100,000</td>
+            </tr>
+        </table>         
+        
+        <p>
+            <b>Este es el articulo:</b>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <b id="codigo">El codigo es: jbcsiVYmicis34567"45603nc&&/vcuwsSDFGHJnbvC<br>SdrtyuYTREw2WSDCvhJIu76%$EWsDCFVGHJKI(/65$#WsdFGHu/&54eDC<br>fvbhJUyTRfdcVBhjUytRFvgbHJuY&T5reDFGhjkiU765rFghji765rDFvghjI(76%RfghJI87<br>6%RfghJU(76%RfgHJI/&5trfGHJiu7&%$edcVBnjiu76VFER$%&/UJBvfr$%&/(IKJNBvfr5<br>&/UJNBVFr56/(UJNBVFRt6yujnbgfr45&/UJNBVFR567uBGT&/(UJNbvcfr%&/UJnbvfrtY</b>
+        <li><a href="#principio">Regresar al Principio</a></li><br>
+        <div class="etiquetas_Obsoletas">
+            <!--<blink>Hola Mundo,que tal estan?Quiero ver si esta etiqueta esta obsoleta en HTML5 en el navegador Opera GX,y suponiendo supongo que tambien en el
+            Opera Normal.</blink>
+            <marquee height="25px">Hola Mundo,que tal estan?Quiero ver si esta etiqueta esta obsoleta en HTML5 en el navegador Opera GX</marquee>-->
+        </div>
+        <div>
+            <p class="CSS_Interno-div__p">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p style="color: green;">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+    </body>
+</html>
+<!--Errores Comunes:
+-No combinar lenguajes(CSS,JS)
+-Usar rutas para los archivos de CSS y de JS'Pero saber como usarlos de forma interna y en linea no esta de mas si se sabe en que momentos y como usarlos de manera correcta'
+-No usar etiquetas de otros lenguajes como "center",usarlos en su lenguaje correspondido
+-No hacer que sea vea bonito,nisiquiera bien a laa vista con HTML.Para eso esta CSS.Solo se debe poner y arreglar bien semanticamente y saber cuando y como usar etiquetas especificas
+-No usar etiquetas obsoletas
+-->

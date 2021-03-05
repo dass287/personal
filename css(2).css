@@ -1,0 +1,256 @@
+html {
+	scroll-behavior: smooth;
+}
+/*body {}
+	padding-left: 150px;
+}
+.fixed_y_overflow {
+	left: 0px;
+	position: fixed;
+	background-color: rgb(228, 0, 0);
+	width: 150px;
+	height: 630px;
+	z-index: 1000000;
+	text-align: center;
+	font-size: 2em;
+	box-sizing: border-box;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+*/
+/*-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------PSEUDO-ELEMENTOS----------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------*/
+.Texto-PseudoElementos {
+	font-weight: 100;
+	font-size: 20px;
+	padding: 20px;
+}
+/*Solol funcionan en bloque*/
+.Texto-PseudoElementos::first-line {
+	color: #72f39f;
+}
+/*Los pseudo-elementos que necesitan la propiedad content; no forman parte del DOM*/
+.form-placeholder {
+	margin: auto;
+	display: block;
+	width: 50%;
+	padding: 20px;
+	height: 100px;
+}
+/*A la caja dentro de form le damos 100% para que tome el 100% de la caja en la que esta y no el de la pagina*/
+.input__placeholder {
+	background-color: rgb(72, 69, 69);
+	width: 100%;
+	height: 100%;
+	color: rgba(201, 37, 0, 0.852);
+	outline: none;
+}
+.input__placeholder::placeholder {
+	color: #ff0000;
+	text-align: center;
+}
+/*Selection es cuando se selecciona texto con el mouse o atajos como "Ctrl + a" y cambiar como se va a ver*/
+.input__placeholder::selection {
+	color: #fff;
+	background-color: darkslateblue;
+}
+.div-before_after {
+	width: fit-content;
+	height: fit-content;
+	margin: 20px auto;
+	color: darkslateblue;
+	background-color: floralwhite;
+}
+.div-before_after::before {
+	content:"Pseudo"
+}
+.div-before_after::after {
+	content:"clases"
+}
+/*Pseudo-clases*/
+/*------------------------------------------------------*/
+/*Link y Visited*/
+.div-link1, .div-link2 {
+	display: block;
+	width: max-content;
+	height: max-content;
+	margin: 10px auto;
+}
+.div-link1, .div-link2 :link {
+	color: darkslategrey;
+	background-color: red;
+}
+.div-link1:visited {
+	color: yellowgreen;
+	background-color: darkorange;
+}
+.div-link2 :visited{
+	color: darkorange;
+	background-color: lightgreen;
+}
+/*Active*/
+.pseudo-clases__active {
+	font-size: 15px;
+	margin: 10px auto;
+	width: 320px;
+	height: 300px;
+	background: aquamarine;	
+	transition: all 1.8s;
+}
+.pseudo-clases__active:active {
+	width: 420px;
+	height: 400px;
+	background: blueviolet;
+}
+.pseudo-clases__active p {
+	text-align: center;
+	padding-top: 45%;
+}
+.pseudo-clases__active p::before {
+	content:"Manten Presionado Aqui con el Mouse"
+}
+/*Al ponerle transition solo al focus(aplica para active y hover) El texto al cargar la pagina ya esta cargado
+pero al salirse del focus en este caso se sale de un solo y se ve muy brusco el cambio pero si se lo
+pongo a la caja sin la pseudo-clase puesta al cargar la pagina la caja se va a ajustar pero al salirse
+tambien va a haber una transicion*/
+/*Hover*/
+.pseudo-clases__hover {
+	font-size: 15px;
+	margin: auto;
+	margin-bottom: 20px;
+	width: 270px;
+	height: 250px;
+	background: rgba(255, 197, 37, 0.945);
+	transition: all 1.8s;
+}
+.pseudo-clases__hover:hover {
+	width: 370px;
+	height: 350px;
+	background: rgb(129, 88, 25);
+}
+.pseudo-clases__hover p {
+	text-align: center;
+	padding-top: 45%;
+}
+.pseudo-clases__hover p::before {
+	content:"Manten el Mouse sobre esta caja"
+}
+/*Focus*/
+.input_focus {
+	display: block;
+	width: 175px;
+	height: 150px;
+	margin: auto;
+	color: #c00;
+	background-color: black;
+	text-align: center;
+	transition: all 1.2s;
+}
+.input_focus:focus {
+	width: 300px;
+	height: 300px;
+	color: #fff;
+	background-color: rgb(128, 127, 127);
+}
+.input_focus::placeholder {
+	color: #c00;
+}
+/*Lang*/
+.div-lang {
+	margin: 10px auto;
+}
+.div-lang b:lang(en){
+	display: block;
+	width: fit-content; height: fit-content;
+	margin: 5px auto;
+	color: #fff;
+	background-color: #000;
+}
+.div-lang b:lang(es){
+	display: block;
+	width: fit-content; height: fit-content;
+	margin: 5px auto;
+	color: #fff;
+	background-color: #c00;
+	border: 1px solid #000;
+}
+/*Object-fit*/
+.div_object-fit1, .div_object-fit2, .div_object-fit3, .div_object-fit4 {
+	display: inline-block;
+	width: 300px;
+	height: 500px;
+	margin: 10px;
+	border: 1px solid darkblue;
+}
+.div_object-fit1 img {
+	width: 100%; height: 100%;
+	object-fit: cover;
+}
+.div_object-fit2 img {
+	width: 100%; height: 100%;
+	object-fit: contain;
+}
+.div_object-fit3 img {
+	width: 100%; height: 100%;
+	object-fit: fill;
+}
+.div_object-fit4 img {
+	width: 100%; height: 100%;
+	object-fit: scale-down;
+}
+/*None pone el tamaño real o el que le pongamos(esto causa que se estira). Scaledown deja la que termina quedando mas pequeña*/
+/*--------object-position---------*/
+.gallery2 {
+	position: absolute;
+	z-index: 1000;
+	top: 1800px;
+	left: 10px;
+}
+.div_object-fit5, .div_object-fit6, .div_object-fit7 {
+	width: 200px;
+	height: 70px;
+	border: 4px solid blue;
+	margin: 20px;
+}
+.div_object-fit5 img{
+	width: 100%; height: 100%;
+	object-fit: cover;
+	object-position: top;
+}
+.div_object-fit6 img{
+	width: 100%; height: 100%;
+	object-fit: cover;
+	object-position: left;
+}
+.div_object-fit7 img{
+	width: 100%; height: 100%;
+	object-fit: cover;
+	object-position: bottom;
+}
+.gallery {
+	position: absolute;
+	z-index: 1000;
+	top: 1820px;
+	left: 300px;
+}
+.div_object-fit8, .div_object-fit9 {
+	width: 70px; height: 200px;
+	border: 4px solid blue;
+	margin: 10px;
+	display: inline-block;
+}
+.div_object-fit8 img{
+	width: 100%; height: 100%;
+	object-fit: cover;
+	object-position: left;
+}
+.div_object-fit9 img{
+	width: 100%; height: 100%;
+	object-fit: cover;
+	object-position: right;
+}
+/*Tambien se puede el object-position con medidas como 1px o 1em*/
+/*--------------------------------------------------------------*/
+/*Cursor le da propiedades al cursor cuando esta sobre esta caja*/
+/*hexadecimal no entendi como hacerlo xD, y considero mejor usar rgba*/
